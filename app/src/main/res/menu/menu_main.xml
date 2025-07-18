@@ -4,7 +4,22 @@
     tools:context="com.vaibhav.skyboard.MainActivity">
     <item
         android:id="@+id/action_settings"
-        android:orderInCategory="100"
         android:title="@string/action_settings"
-        app:showAsAction="never" />
+        app:showAsAction="always"
+        android:orderInCategory="3"
+        android:icon="@android:drawable/ic_menu_preferences"/>
+
+    <item
+        android:id="@+id/action_toggle_refresh"
+        android:title="Pause/Play"
+        android:icon="@drawable/ic_pause_foreground"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="2"/>
+
+    <item
+        android:id="@+id/action_clear_all"
+        android:title="Clear All"
+        android:icon="@drawable/ic_clear_all_foreground"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="1"/>
 </menu>

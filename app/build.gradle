@@ -38,7 +38,24 @@ dependencies {
     implementation libs.constraintlayout
     implementation libs.navigation.fragment
     implementation libs.navigation.ui
+    implementation libs.activity
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
+
+    //Project Level Dependencies:
+    implementation libs.glide
+    annotationProcessor libs.compiler
+
+    // Retrofit for HTTP
+    implementation libs.retrofit
+
+    // Gson Converter for JSON
+    implementation libs.converter.gson
+    implementation libs.gson
+
+    //Swipe Refresh Layout
+    implementation libs.swiperefreshlayout
+
+
 }
